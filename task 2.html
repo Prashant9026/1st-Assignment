@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="task2.css">
+    <title>Document</title>
+    <style>
+        .task{
+    list-style:none;
+    background-color:#1a1a2e;
+    position:relative;
+    padding:20px;
+}
+.task li{
+    display:inline-block;
+    color:white;
+    padding:20px;
+}
+.task li:hover{
+    background-color:#e63946;
+    cursor:pointer;
+    border-radius:2px;
+}
+.dropdown1-content{
+    display:none;
+    list-style:none;
+    position:absolute;
+    top:50px;
+    left:0;
+    width:100%;
+}
+.dropdown1-content li{
+    display:block;
+    border-bottom:1px solid #000;
+    background-color:#a855f7;
+    color:white;
+    padding:10px 20px;
+}
+.dropdown1-content li:hover{
+    background-color:#f59e0b;
+    cursor:pointer;
+}
+.dropdown1:hover .dropdown1-content{
+    display:block;
+}
+    </style>
+</head>
+<body>
+     <ul class="task">
+        <li>HOME</li>
+        <li class="dropdown1">
+           MENU
+            <ul class="dropdown1-content">
+                <li>PIZZA</li>
+                <li>PASTA</li>
+                <li>BURGER</li>
+                <li>drinks</li>
+            </ul>
+        </li>
+        <li>SERVICES</li>
+        <li>CONTACT</li>
+    </ul>
+</body>
+</html>
